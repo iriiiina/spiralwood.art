@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="future-event.svg"
+   inkscape:export-filename="/Users/irina/github/spiralwood.art/img/live/future-event.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.20274915"
+     inkscape:cx="737.36438"
+     inkscape:cy="811.34743"
+     inkscape:window-width="1312"
+     inkscape:window-height="783"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#2d3436;fill-opacity:1;stroke:none;stroke-width:0.734612;stroke-linejoin:round"
+       id="rect846"
+       width="264.58334"
+       height="264.58334"
+       x="0"
+       y="0"
+       inkscape:export-filename="/Users/irina/github/spiralwood.art/img/live/future-event.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7356px;line-height:1.25;font-family:mono;-inkscape-font-specification:mono;fill:#ffffff;fill-opacity:1;stroke-width:0.56839"
+       x="51.806759"
+       y="94.705986"
+       id="text1433"><tspan
+         sodipodi:role="line"
+         id="tspan1431"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gayathri;-inkscape-font-specification:Gayathri;fill:#ffffff;fill-opacity:1;stroke-width:0.56839"
+         x="51.806759"
+         y="94.705986">upcoming event</tspan></text>
+  </g>
+</svg>
