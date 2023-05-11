@@ -62,30 +62,26 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 50px;
     margin: 40px 40px 100px 40px;
-}
-
-#social p {
-    margin: 40px 0 40px 0;
 }
 
 #social a {
     font-size: 2em;
     color: #b2bec3;
     text-decoration: none;
-    transition: color 0.5s ease;
-}
-
-#social a:hover {
-    color: #909988;
 }
 
 #social svg {
     height: 1.5em;
     vertical-align: middle;
-    fill: #b2bec3;
+    fill: #808080;
     margin: 0 10px 0 0;
+    transition: fill 0.5s ease;
+}
+
+#social svg:hover {
+    fill: white;
 }
 
 /* LIVE */
