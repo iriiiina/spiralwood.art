@@ -9,12 +9,12 @@ html {
 }
 
 body {
+    font-family: 'Major Mono Display', monospace;
     margin: 0;
     padding: 0;
     font-size: 1em;
     background-color: #2d3436;
     color: #dfe6e9;
-    font-family: Gayathri;
 }
 
 /* HEADER */
@@ -34,8 +34,7 @@ body {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 #description {
@@ -49,9 +48,17 @@ h1 {
 #logo {
     fill: black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: 100px auto 0px auto;
+    width: 250px;
+    height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        margin: 20px auto 0px auto;
+        width: 70%;
+        height: 70%;
+    }
 }
 
 /* SOCIAL */
@@ -59,11 +66,11 @@ h1 {
 #social {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 50px;
-    margin: 40px 40px 100px 40px;
+    margin: 0px 40px 40px 40px;
 }
 
 #social a {
@@ -77,31 +84,36 @@ h1 {
     vertical-align: middle;
     fill: #808080;
     margin: 0 10px 0 0;
-    transition: fill 0.5s ease;
 }
 
-#social svg:hover {
-    fill: white;
+@media only screen and (min-width: 768px) {
+    #social {
+        flex-wrap: nowrap;
+        margin: 40px 40px 100px 40px;
+    }
+    #social svg {
+        transition: fill 0.5s ease;
+    }
+    #social svg:hover {
+        fill: white;
+    }
 }
 
 /* LIVE */
 
 #live {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 50px;
+    padding-bottom: 100px;
 }
 
 .live-row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-width: 100%;
 }
 
 .live {
@@ -112,21 +124,17 @@ h1 {
 
 .live-year p {
     font-size: 2em;
-    padding: 50px;
+    padding: 10px 0 10px 0;
 }
 
 .live-image {
     height: 100%;
     width: 100%;
     opacity: 60%;
-    transition: opacity 0.5s ease;
-}
-
-.live-image:hover {
-    opacity: 100%;
 }
 
 .live-description {
+    font-family: 'Barlow Condensed', sans-serif;
     position: absolute;
     bottom: 0%;
     padding: 10px 20px 10px 20px;
@@ -134,13 +142,38 @@ h1 {
 }
 
 .live-description h3 {
-    font-size: 1em;
     font-weight: 400;
     margin: 0px;
 }
 
 .live-description p {
     margin: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    #live {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        padding-bottom: 0px;
+    }
+    .live-row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-width: 100%;
+    }
+    .live-year p {
+        padding: 50px;
+    }
+    .live-image {
+        transition: opacity 0.5s ease;
+    }
+    .live-image:hover {
+        opacity: 100%;
+    } 
+    .live-description p {
+        margin: 0px;
+    }
 }
 
 /* ALBUMS */
@@ -150,23 +183,37 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 100px;
+    margin: 10px 0px 100px 0px;
 }
 
 #albums iframe {
-    width: 50%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #albums {
+        margin: 100px 0px 100px 0px;
+    }
+    #albums iframe {
+        width: 50%;
+    }
 }
 
 /* GALLERY */
 
 #gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+    display: none;
 }
 
-#gallery img {
-    width: 20%;
-    opacity: 0.7;
+@media only screen and (min-width: 768px) {
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    #gallery img {
+        width: 20%;
+        opacity: 0.7;
+    }
 }

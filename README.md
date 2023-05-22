@@ -10,6 +10,5 @@ https://spiralwood.art
 
 
 TODO
-* create preview
-* responsive
 * lighthouse
+* create preview
