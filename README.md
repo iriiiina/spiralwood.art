@@ -11,4 +11,4 @@ https://spiralwood.art
 
 TODO
 * lighthouse
-* create preview
+* fix header on small screen
