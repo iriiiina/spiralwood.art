@@ -11,4 +11,3 @@ https://spiralwood.art
 
 TODO
 * lighthouse
-* fix header on small screen

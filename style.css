@@ -27,7 +27,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 80px;
     opacity: 1;
 }
 
@@ -65,6 +64,7 @@ h1 {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-480.webp') no-repeat center center;
             height: 320px;
             margin-bottom: 350px;
+            padding-top: 10px;
         }
     }
     @supports not (background: url('img/forest-480.webp')) {
@@ -72,6 +72,7 @@ h1 {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-480.png') no-repeat center center;
             height: 320px;
             margin-bottom: 350px;
+            padding-top: 10px;
         }
     }
 }
@@ -82,13 +83,16 @@ h1 {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-640.webp') no-repeat center center;
             height: 427px;
             margin-bottom: 250px;
+            padding-top: 20px;
         }
+
     }
     @supports not (background: url('img/forest-640.webp')) {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-640.png') no-repeat center center;
             height: 427px;
             margin-bottom: 250px;
+            padding-top: 20px;
         }
     }
 }
@@ -99,6 +103,7 @@ h1 {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-768.webp') no-repeat center center;
             height: 512px;
             margin-bottom: 150px;
+            padding-top: 30px;
         }
     }
     @supports not (background: url('img/forest-768.webp')) {
@@ -106,6 +111,7 @@ h1 {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-768.png') no-repeat center center;
             height: 512px;
             margin-bottom: 150px;
+            padding-top: 30px;
         }
     }
 }
@@ -115,12 +121,14 @@ h1 {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-1024.webp') no-repeat center center;
             height: 683px;
+            padding-top: 50px;
         }
     }
     @supports not (background: url('img/forest-1024.webp')) {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-1024.png') no-repeat center center;
             height: 683px;
+            padding-top: 50px;
         }
     }
 }
@@ -130,12 +138,14 @@ h1 {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-2048.webp') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
     @supports not (background: url('img/forest-2048.webp')) {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-2048.png') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
 }
@@ -145,12 +155,14 @@ h1 {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-4096.webp') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
     @supports not (background: url('img/forest-4096.webp')) {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest-4096.png') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
 }
@@ -160,12 +172,14 @@ h1 {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest.webp') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
     @supports not (background: url('img/forest.webp')) {
         #header {
             background: linear-gradient(to top, rgba(45,52,54, 1), rgba(0, 0, 0, 0)), url('img/forest.jpg') no-repeat center center;
             height: 750px;
+            padding-top: 80px;
         }
     }
 }
