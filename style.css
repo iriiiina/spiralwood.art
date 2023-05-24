@@ -314,6 +314,7 @@ h1 {
 #albums iframe {
     width: 100%;
     border: 0px;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -328,18 +329,18 @@ h1 {
 
 /* GALLERY */
 
-#gallery {
+footer {
     display: none;
 }
 
 @media only screen and (min-width: 768px) {
-    #gallery {
+    footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: flex-start;
     }
-    .gallery-img {
+    .footer-image {
         width: 100%;
         opacity: 0.7;
     }
