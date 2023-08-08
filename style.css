@@ -308,7 +308,7 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     margin: 10px 10px 10px 10px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #albums iframe {
@@ -319,11 +319,114 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     #albums {
-        margin: 100px 0px 100px 0px;
+        margin: 100px 0px 50px 0px;
         padding-bottom: 10px;
     }
     #albums iframe {
         width: 50%;
+    }
+}
+
+/* PINS */
+
+#pins {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.pin {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#pin-1 {
+    animation: pin 1700ms infinite;
+    animation-delay: 100ms;
+}
+
+#pin-2 {
+    animation: pin 1700ms infinite;
+    animation-delay: 200ms;
+}
+
+#pin-3 {
+    animation: pin 1700ms infinite;
+    animation-delay: 300ms;
+}
+
+#pin-4 {
+    animation: pin 1700ms infinite;
+    animation-delay: 400ms;
+}
+
+#pin-5 {
+    animation: pin 1700ms infinite;
+    animation-delay: 500ms;
+}
+
+#pin-6 {
+    animation: pin 1700ms infinite;
+    animation-delay: 600ms;
+}
+
+#pin-7 {
+    animation: pin 1700ms infinite;
+    animation-delay: 700ms;
+}
+
+#pin-8 {
+    animation: pin 1700ms infinite;
+    animation-delay: 800ms;
+}
+
+#pin-9 {
+    animation: pin 1700ms infinite;
+    animation-delay: 900ms;
+}
+
+#pin-10 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1000ms;
+}
+
+#pin-11 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1100ms;
+}
+
+#pin-12 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1200ms;
+}
+
+#pin-13 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1300ms;
+}
+
+#pin-14 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1400ms;
+}
+
+#pin-15 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1500ms;
+}
+
+#pin-16 {
+    animation: pin 1700ms infinite;
+    animation-delay: 1600ms;
+}
+
+@keyframes pin {
+    0% {
+        opacity: 0
+    }
+    10%, 100% {
+        opacity: 1
     }
 }
 
