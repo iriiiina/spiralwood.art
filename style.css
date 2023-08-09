@@ -335,9 +335,14 @@ h1 {
 }
 
 .pin {
-    height: 50px;
-    border-radius: 50%;
+    height: 30px;
     display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+    .pin {
+        height: 50px;
+    }
 }
 
 #pin-1 {
