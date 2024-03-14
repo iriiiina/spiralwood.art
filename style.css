@@ -262,7 +262,7 @@ h1 {
     position: relative;
 }
 
-.live-year p {
+.live-year h2 {
     font-size: 2em;
     padding: 10px 0 10px 0;
 }
@@ -281,7 +281,7 @@ h1 {
     background-color: #2d3436;
 }
 
-.live-description h2 {
+.live-description h3 {
     font-weight: 400;
     font-size: 1em;
     margin: 0px;
@@ -305,7 +305,7 @@ h1 {
         min-width: 100%;
     }
 
-    .live-year p {
+    .live-year h2 {
         padding: 50px;
     }
 
@@ -462,20 +462,50 @@ h1 {
 
 /* GALLERY */
 
-footer {
+#gallery {
     display: none;
 }
 
 @media only screen and (min-width: 768px) {
-    footer {
+    #gallery {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: flex-start;
+        margin: 0;
+        background-color: black;
     }
 
-    .footer-image {
+    .gallery-image {
         width: 100%;
         opacity: 0.7;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    footer a {
+        transition: font-weight 0.5s ease;
+    }
+
+    footer a:hover {
+        font-weight: 800;
     }
 }
