@@ -337,6 +337,7 @@ h1 {
     width: 100%;
     border: 0px;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 @media only screen and (min-width: 768px) {
