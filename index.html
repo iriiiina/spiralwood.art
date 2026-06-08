@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spiral Wood</title>
 
-  <meta name="description" content="Spiral Wood Music | Indie ambient musician who creats experimental electronic art">
+  <meta name="description" content="Spiral Wood Music | Indie ambient musician who creates experimental electronic art">
   <meta property="og:url" content="https://spiralwood.art">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Spiral Wood Music">
@@ -19,7 +19,7 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="en-EN">
+  <meta property="og:locale" content="en_US">
 
   <link rel="manifest" href="manifest.json">
   <link rel="canonical" href="https://spiralwood.art">
@@ -29,18 +29,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#2d3436">
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- Logo Scroll -->
   <script>
-    window.onscroll = function () {
-      var theta = document.documentElement.scrollTop / 120;
-      document.getElementById('rotate').style.transform = 'rotate(' + theta + 'rad)';
-      document.getElementById('header').style.opacity = 120 / document.documentElement.scrollTop;
-    }
+    (function () {
+      var ticking = false;
+      function update() {
+        var scrollTop = document.documentElement.scrollTop;
+        var rotate = document.getElementById('rotate');
+        var header = document.getElementById('header');
+        if (rotate) rotate.style.transform = 'rotate(' + (scrollTop / 120) + 'rad)';
+        if (header) header.style.opacity = scrollTop > 0 ? Math.min(1, 120 / scrollTop) : 1;
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
   </script>
 
   <!-- Google Fonts -->
@@ -181,7 +193,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">Kvissentali Päev LIVE</h3>
-            <p itemprop="startDate">30.05.2026</p>
+            <p><time itemprop="startDate" datetime="2026-05-30">30.05.2026</time></p>
             <p itemprop="location">Klaose Playground</p>
           </div>
         </div>
@@ -199,13 +211,13 @@
             <picture>
               <source srcset="img/live/2025-laska-v21.webp" type="image/webp">
               <source srcset="img/live/2025-laska-v21.png" type="image/png">
-              <img class="live-image" src="img/live/2025-laska-v21.png" loading="lazy" alt="Laksa V21"
+              <img class="live-image" src="img/live/2025-laska-v21.png" loading="lazy" alt="Laska V21"
                 itemprop="image">
             </picture>
           </a>
           <div class="live-description">
             <h3 itemprop="name">JoVille & Spiral Wood LIVE</h3>
-            <p itemprop="startDate">13.03.2025</p>
+            <p><time itemprop="startDate" datetime="2025-03-13">13.03.2025</time></p>
             <p itemprop="location">Laska V21, Riga</p>
           </div>
         </div>
@@ -221,7 +233,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">JoVille & Spiral Wood LIVE</h3>
-            <p itemprop="startDate">14.03.2025</p>
+            <p><time itemprop="startDate" datetime="2025-03-14">14.03.2025</time></p>
             <p itemprop="location">Vinilbārs, Riga</p>
           </div>
         </div>
@@ -238,7 +250,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">JoVille & Spiral Wood LIVE</h3>
-            <p itemprop="startDate">15.03.2025</p>
+            <p><time itemprop="startDate" datetime="2025-03-15">15.03.2025</time></p>
             <p itemprop="location">Paavli Kultuurivabrik</p>
           </div>
         </div>
@@ -264,7 +276,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">SÜNK Stage at Kauge</h3>
-            <p itemprop="startDate">20.04.2024</p>
+            <p><time itemprop="startDate" datetime="2024-04-20">20.04.2024</time></p>
             <p itemprop="location">Kammivabrik</p>
           </div>
         </div>
@@ -289,7 +301,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">JoVille & Spiral Wood LIVE</h3>
-            <p itemprop="startDate">30.03.2023</p>
+            <p><time itemprop="startDate" datetime="2023-03-30">30.03.2023</time></p>
             <p itemprop="location">Genialistide Club</p>
           </div>
         </div>
@@ -306,7 +318,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">JoVille & Spiral Wood LIVE</h3>
-            <p itemprop="startDate">31.03.2023</p>
+            <p><time itemprop="startDate" datetime="2023-03-31">31.03.2023</time></p>
             <p itemprop="location">Art Club RoRo</p>
           </div>
         </div>
@@ -330,7 +342,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">Kukemuru Ambient</h3>
-            <p itemprop="startDate">17–18.06.2022</p>
+            <p><time itemprop="startDate" datetime="2022-06-17">17–18.06.2022</time></p>
             <p itemprop="location">Esna Gallery</p>
           </div>
         </div>
@@ -346,7 +358,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">Viljandi Hoovifestival</h3>
-            <p itemprop="startDate">8.07.2022</p>
+            <p><time itemprop="startDate" datetime="2022-07-08">8.07.2022</time></p>
             <p itemprop="location">Mulks</p>
           </div>
         </div>
@@ -363,7 +375,7 @@
           </a>
           <div class="live-description">
             <h3 itemprop="name">Madli Liiva Exhibition</h3>
-            <p itemprop="startDate">16.11.2022</p>
+            <p><time itemprop="startDate" datetime="2022-11-16">16.11.2022</time></p>
             <p itemprop="location">Türi Kultuurikeskus</p>
           </div>
         </div>
