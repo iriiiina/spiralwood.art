@@ -62,6 +62,15 @@
   <meta name="msapplication-TileColor" content="#2d3436">
   <meta name="theme-color" content="#2d3436">
 
+  <!-- Preload the forest hero (used as CSS background) so LCP starts fetching pre-CSS. -->
+  <link rel="preload" as="image" href="img/forest-480.webp" media="(max-width: 480px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest-640.webp" media="(min-width: 481px) and (max-width: 640px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest-768.webp" media="(min-width: 641px) and (max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest-1024.webp" media="(min-width: 769px) and (max-width: 1024px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest-2048.webp" media="(min-width: 1025px) and (max-width: 2048px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest-4096.webp" media="(min-width: 2049px) and (max-width: 4096px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/forest.webp" media="(min-width: 4097px)" fetchpriority="high">
+
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -98,11 +107,16 @@
     })();
   </script>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (non-blocking: load as print, swap to all after load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Major+Mono+Display&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Major+Mono+Display&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Major+Mono+Display&display=swap">
+  </noscript>
 
 </head>
 
@@ -446,22 +460,22 @@
     </div>
 
     <div id="pins">
-      <img class="pin" id="pin-1" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-2" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-3" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-4" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-5" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-6" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-7" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-8" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-9" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-10" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-11" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-12" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-13" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-14" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-15" src="img/pin.svg" alt="" aria-hidden="true" />
-      <img class="pin" id="pin-16" src="img/pin.svg" alt="" aria-hidden="true" />
+      <img class="pin" id="pin-1" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-2" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-3" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-4" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-5" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-6" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-7" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-8" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-9" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-10" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-11" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-12" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-13" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-14" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-15" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
+      <img class="pin" id="pin-16" src="img/pin.svg" alt="" aria-hidden="true" width="18" height="50" />
     </div>
 
     <div id="gallery" itemscope itemtype="https://schema.org/ImageGallery">
