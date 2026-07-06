@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  Dark sticker source. Trim: 50x50mm circle. Bleed: 3mm on each side (total 56x56mm).
+  Logo intentionally exceeds the canvas (60mm wide) so the wave exits left/right of the cut.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="56mm" height="56mm" viewBox="0 0 56 56">
+  <rect width="56" height="56" fill="#000000"/>
+  <!-- Logo 60mm wide, centred at (28,28). Scale = 60 / 281.2 = 0.2134.
+       Height at this scale = 193 * 0.2134 = 41.19mm; y offset = (56-41.19)/2 = 7.405. -->
+  <g transform="translate(-2 7.405) scale(0.2134)">
+    <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" transform="translate(140.6,96.5)">
+      <circle cx="0" cy="0" r="95" opacity="0.95"/>
+      <circle cx="0" cy="0" r="77" opacity="0.8"/>
+      <circle cx="0" cy="0" r="59" opacity="0.65"/>
+      <circle cx="0" cy="0" r="41" opacity="0.5"/>
+      <circle cx="0" cy="0" r="23" opacity="0.35"/>
+      <circle cx="0" cy="0" r="2" fill="#ffffff" fill-opacity="0.4" stroke="none"/>
+    </g>
+    <path d="M 0.6,96.5 Q 70.6,74.5 140.6,96.5 q 70,22 140,0" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+</svg>
